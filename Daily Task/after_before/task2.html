@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            /* width: 50%; */
+            background-color: pink;
+            padding: 25px;
+            position: relative;
+            /* transition: 0.5s; */
+            overflow: hidden;  
+            margin: 200px 500px;  
+            display: inline-block;
+            
+        }
+        #main h2{
+            display: inline-block;
+        }
+        #main::before{
+            content:  '';
+            background-color: black;
+            width: 0%;
+            height: 4px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 5s;
+        }
+        #main:hover::before{
+            width: 100%;
+        }
+        
+        #main::after{
+            content: '' ;
+            background-color: black;
+            width: 0%;
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+           transition: 5s;
+        }
+        #main:hover::after{
+            width: 100%;
+            
+        }
+        #main::before{
+            content: 'Pratik';
+            background-color: blue;
+            width: 0%;
+            height: 4px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            direction: rtl;
+        }
+        #main:hover::before{
+            width: 100%;
+        }
+        #main::after{
+            content: 'Chasiya';
+            background-color: blue;
+            width: 0%;
+            height: 4px;
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+        }
+        #main:hover::after{
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h2>Oscar career Point</h2>
+    </div>
+</body>
+</html>

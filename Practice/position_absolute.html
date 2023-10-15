@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #main{
+            height: 250px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 30px;
+            position: relative; /* == main ne parent banavyo che to hve ana pramane khasase div== */
+
+        }
+        #sec1{
+            background-color: dodgerblue;
+        }
+        #sec2{
+            background-color: green;
+            position: absolute;/*  ==aa div pehla absolute apvathi hawa ma aavse ani jagya pr j p6i ane top thi and left khasadyo to a ani jagya 6odi dese ane ani baju ma j hse te ani jagya pr avi jse== */
+            top: 200px;
+            left: 200px;
+            /* ==absolute position ma ano koi position parent hoi to a ana pramane khasase pn jo ano koi position parent na hoi to a body ne position parents manse ane ana pramane khasase== */
+        }
+        #sec3{
+            background-color: crimson;
+        }
+        .cls{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="cls" id="sec1"></div>
+        <div class="cls" id="sec2"></div>
+        <div class="cls" id="sec3"></div>
+    </div>
+</body>
+</html>

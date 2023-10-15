@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border: 1px solid black;
+            width: 100%;
+            padding: 25px;
+            background-color: pink;
+            text-align: center;
+        }
+        #main:hover h2::before {
+            content: 'Oscar '; /*  ===content is compulsury=== */
+        }
+        #main:hover h2::after {
+            content: ' Point';
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+    <h2>Career</h2>
+   </div> 
+</body>
+</html>

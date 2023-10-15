@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        #main {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            position: relative;
+            margin: 176px auto;
+        }
+
+        #sub {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #sub::before {
+            content: '';
+            background-color: pink;
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            bottom: 50%;
+            position: absolute;
+
+            transition: 3s;
+        }
+
+        #sub:hover::before {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="sub">
+            <img src="img_avatar.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

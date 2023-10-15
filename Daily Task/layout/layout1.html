@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            width: 100%;
+            float: left;
+          
+        }
+        #space{
+            width: 80;
+            margin: 0 auto;
+            overflow: auto;
+            border: 5px solid grey;
+        }
+        #header{
+            background-color: rgb(82, 167,249);
+            width: 100%;
+            float: left;
+            margin-bottom: 5px;
+        }
+        #content{
+            width: 60%;
+            margin: 0 auto;
+        }
+        #sec1{
+            background-color: rgb(111,192,65);
+            width: calc(60% - 2.5px);
+            float: left;
+            margin-bottom: 5px;
+            padding: 60px;
+        }
+        #sec2{
+            background-color: rgb(179,105,226);
+            width: calc(40% - 2.5px);
+            float: right;
+            margin-bottom: 5px;
+            padding: 60px;
+        }
+        #sec3{
+            background-color: rgb(243,143,26);
+            width: calc(50% - 2.5px);
+            float: left;
+        }
+        #sec4{
+            background-color: rgb(243,143,26);
+            width: calc(50% - 2.5px);
+            float: right;
+        }
+        #footer{
+            background-color: rgb(3,101,192);
+            width: 100%;
+            float: left;
+            margin-top: 5px;
+        }
+        .cls{
+            padding: 40px;
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="cls">
+        <div id="space">
+            <div id="header" class="cls">.header</div>
+            <div id="content" class="cls">
+                <div id="sec1" class="cls">.main-content</div>
+                <div id="sec2" class="cls">.sidebar</div>
+                <div id="sec3" class="cls">.twin</div>
+                <div id="sec4" class="cls">.twin</div>
+            </div>
+            <div id="footer" class="cls">.footer</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        #main{
+            width: 100%;
+            border: 1px solid black;
+            background-color: indianred;
+            padding: 15px;
+            text-align: center;
+            display: grid;/*  ==by default grid j hoi== */
+            /* display: inline-grid; ==content pramane jagya lai lese== */
+            grid-template-columns: 25% 50% 25%;/*  ==aa percentage pramane 3 box jagya lai lese */
+            grid-template-columns: 100px 100px 100px; /* ==3 box aa px pramane jagya lai lese== */
+            grid-template-columns: auto auto auto; /* ==automatic bdha sarkhi size na thai jse== */
+            /* column-gap: 10px; == only column vacche gap thse== */
+            /* row-gap: 10px; ==only row vacche gap thse== */
+            gap: 10px; /* ==gap thai jse bdhi baju thi sarkhi== */
+            /* justify-content: space-between; */
+        }
+        .cls{
+            border: 1px solid black;
+            background-color: wheat;
+            padding: 10px 0;
+            /* width: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="part1" class="cls">1</div>
+        <div id="part2" class="cls">2</div>
+        <div id="part3" class="cls">3</div>
+        <div id="part4" class="cls">4</div>
+        <div id="part5" class="cls">5</div>
+        <div id="part6" class="cls">6</div>
+        <div id="part7" class="cls">7</div>
+        <div id="part8" class="cls">8</div>
+        <div id="part9" class="cls">9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0;
+}
+
+#sec1 {
+    width: 100%;
+    float: left;
+    background-color: skyblue;
+    height: 100px;
+}
+
+#list {
+    width: 60%;
+    float: right;
+    list-style: none;
+}
+
+#sec2 li {
+    list-style: none;
+    float: left;
+    padding: 40px 40px;
+}
+
+#sec2 li a {
+    text-decoration: none;
+}
+#header{
+    width: 100%;
+}
+#sec9{
+    float: left;
+}
+#sec9 img{width: 230px;}

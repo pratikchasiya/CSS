@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 150px;
+             transition: 2s;
+          
+        }
+        #sub{
+           
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+           
+            
+        }
+        #main:hover{
+           /*  transform: perspective(300px) rotate3d(50,0,0,20deg); */ /* x direction 50 and y and z ma 0 thse and 20 deg rotate thse */
+           transform: perspective(300px) rotate3d(0,50,70,30deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="sub"></div>
+    </div>
+</body>
+</html>
